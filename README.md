@@ -1,16 +1,19 @@
-# rick_and_morty
+# RickAndMortyFlutter
 
-A new Flutter project.
+Использовано: AndroidStudio, Flutter; Dart, External API, Bloc, Dio, GetIt.
 
-## Getting Started
+Тестовое задание:
 
-This project is a starting point for a Flutter application.
+1. Hеализовать мини-приложение Рика и Морти из дизайна по ссылке:
+https://www.figma.com/file/JUuVDTfYCwDeuY1EsR76qH/Untitled?type=design&node-id=0%3A1&mode=design&t=BauCEhk5b3S1ckXO-1
 
-A few resources to get you started if this is your first Flutter project:
+2. Для получения данных использовать открытый API: https://rickandmortyapi.com/api
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+3. Экраны:
+3.1. Стартовый экран (Launch Screen)
+3.2. Экран списка персонажей - Необходимо реализовать, используя UIKit. Верстка кодом без сторонних библиотек
+3.3. Детальный экран персонажа - Если есть опыт работы со SwiftUI, то реализовать через него, если нет - используем UIKit
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+4. Примечание: Цвета и картинки берем из макета Figma, шрифты можно использовать системные. Для работы с сетью используем URLSession. Launch Screen просто статичная картинка. На остальных экранах во время загрузки данных отображаем лоадер
+5. Скриншоты результата:
+![Simulator Screenshot - iPhone 14 - 2023-11-14 at 23 19 03](https://github.com/YaslikS/RickAndMortyFlutter/assets/58375980/2d381e15-5415-441a-8ddc-e4160ecf8fcb)
