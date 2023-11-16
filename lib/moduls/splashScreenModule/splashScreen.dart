@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../theme/enums.dart';
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -28,7 +30,7 @@ class _SplashScreenState extends State<SplashScreen> {
           alignment: Alignment.center,
           children: [
             Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: EdgeInsets.all(Paddings.sixteen),
               child: Image.asset(
                 "lib/asset/RaM_stars.png",
                 fit: BoxFit.fill,
@@ -39,14 +41,14 @@ class _SplashScreenState extends State<SplashScreen> {
               children: [
                 Image.asset(
                   "lib/asset/RaM_Name.png",
-                  width: 200,
+                  width: Sizes.twoHundred,
                 ),
-                const SizedBox(height: 32),
+                SizedBox(height: Spaces.thirtyTwo),
                 Image.asset(
                   "lib/asset/RaM_Portal.png",
-                  width: 200,
+                  width: Sizes.twoHundred,
                 ),
-                const SizedBox(height: 64),
+                SizedBox(height: Spaces.thirtyTwo),
               ],
             )
           ],

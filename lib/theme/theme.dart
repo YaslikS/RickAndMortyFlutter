@@ -1,29 +1,32 @@
 import 'package:flutter/material.dart';
+import 'package:rick_and_morty/theme/enums.dart';
 
 final darkTheme = ThemeData(
-  colorScheme: ColorScheme.fromSeed(seedColor: Colors.amber),
+  colorScheme: ColorScheme.fromSeed(seedColor: RaM_Colors.green),
   useMaterial3: true,
-  scaffoldBackgroundColor: const Color.fromARGB(255, 5, 13, 30),
-  primarySwatch: Colors.yellow,
-  appBarTheme: const AppBarTheme(
-      iconTheme: IconThemeData(color: Colors.white),
-      backgroundColor: Color.fromARGB(255, 5, 13, 30),
+  scaffoldBackgroundColor: RaM_Colors.background,
+  appBarTheme: AppBarTheme(
+      iconTheme: IconThemeData(color: RaM_Colors.white),
+      backgroundColor: RaM_Colors.background,
       titleTextStyle: TextStyle(
-          color: Colors.white, fontSize: 30, fontWeight: FontWeight.w700)),
-  listTileTheme: const ListTileThemeData(iconColor: Colors.white),
+        color: RaM_Colors.white,
+        fontSize: 30,
+        fontWeight: FontWeight.w700,
+      )),
+  listTileTheme: ListTileThemeData(iconColor: RaM_Colors.white),
   textTheme: TextTheme(
-      bodyMedium: const TextStyle(
-        color: Colors.white,
-        fontSize: 20,
-        fontWeight: FontWeight.w500,
-      ),
-      labelSmall: TextStyle(
-        color: Colors.white.withOpacity(0.6),
-        fontSize: 14,
-      ),
-      headlineMedium: const TextStyle(
-        color: Colors.white,
-        fontSize: 25,
-      )
+    bodyMedium: TextStyle(
+      color: RaM_Colors.white,
+      fontSize: 20,
+      fontWeight: FontWeight.w500,
+    ),
+    labelSmall: TextStyle(
+      color: RaM_Colors.white,
+      fontSize: 15,
+    ),
+    headlineMedium: TextStyle(
+      color: RaM_Colors.white,
+      fontSize: 30,
+    ),
   ),
 );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../theme/enums.dart';
 import '/repo/repoExport.dart';
 
 class CharacterListTile extends StatelessWidget {
@@ -14,6 +15,7 @@ class CharacterListTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return GridTile(
         child: InkResponse(
       enableFeedback: true,
@@ -24,31 +26,29 @@ class CharacterListTile extends StatelessWidget {
         );
       },
       child: Padding(
-        padding: const EdgeInsets.all(12),
+        padding: EdgeInsets.all(Paddings.twelve),
         child: Container(
-          padding: const EdgeInsets.all(12),
+          padding: EdgeInsets.all(Paddings.twelve),
           decoration: BoxDecoration(
-            color: const Color.fromARGB(255, 38, 42, 55),
-            borderRadius: BorderRadius.circular(20),
+            color: RaM_Colors.backgroundSecondary,
+            borderRadius: BorderRadius.circular(Radiuses.twenty),
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               ClipRRect(
-                borderRadius: BorderRadius.circular(20),
+                borderRadius: BorderRadius.circular(Radiuses.fifteen),
                 child: Image.network(
                   characterItem.image,
-                  width: 130,
-                  height: 130,
+                  width: Sizes.oneHundredThirty,
+                  height: Sizes.oneHundredThirty,
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8),
+                padding: EdgeInsets.symmetric(horizontal: Paddings.six),
                 child: Text(
                   characterItem.name,
-                  style: const TextStyle(
-                    fontSize: 15,
-                  ),
+                  style: theme.textTheme.labelSmall,
                 ),
               ),
             ],

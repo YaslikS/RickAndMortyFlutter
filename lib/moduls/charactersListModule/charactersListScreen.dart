@@ -6,7 +6,7 @@ import 'package:get_it/get_it.dart';
 
 import '../../repo/repoExport.dart';
 import 'bloc/characterListBloc.dart';
-import 'charactersListTile.dart';
+import 'widgets/characterListWidgetsExport.dart';
 
 class CharactersListScreen extends StatefulWidget {
   const CharactersListScreen({
@@ -33,7 +33,10 @@ class _CharactersListScreenPageState extends State<CharactersListScreen> {
     return Scaffold(
       appBar: AppBar(
         leading: null,
-        title: const Text("Characters"),
+        title: Text(
+          "Characters",
+          style: theme.textTheme.headlineMedium,
+        ),
       ),
       body: RefreshIndicator(
         onRefresh: () async {
@@ -45,48 +48,10 @@ class _CharactersListScreenPageState extends State<CharactersListScreen> {
           bloc: _characterListBloc,
           builder: (context, state) {
             if (state is CharacterListLoaded) {
-              return GridView.builder(
-                padding: const EdgeInsets.only(
-                    top: 8, bottom: 12, left: 6, right: 6),
-                itemCount: state.characterList.length,
-                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  childAspectRatio: 1 / 1.2,
-                  crossAxisCount: 2,
-                ),
-                itemBuilder: (context, i) {
-                  final characterItem = state.characterList[i];
-                  return CharacterListTile(
-                    characterItem: characterItem,
-                    itemTile: i,
-                  );
-                },
-              );
+              return LoadedCharacterList(state: state);
             }
             if (state is CharacterListLoadingFailure) {
-              return Center(
-                  child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Text(
-                    'Something went wrong',
-                    style: theme.textTheme.headlineMedium
-                        ?.copyWith(color: Colors.white),
-                  ),
-                  Text(
-                    'Please try again later',
-                    style: theme.textTheme.labelSmall?.copyWith(fontSize: 16),
-                  ),
-                  const SizedBox(
-                    height: 30,
-                  ),
-                  TextButton(
-                      onPressed: () {
-                        _characterListBloc.add(LoadCharacterList());
-                      },
-                      child: const Text('Try again')),
-                ],
-              ));
+              return FailureLoadingCharacterList();
             }
             return const Center(child: CircularProgressIndicator());
           },
