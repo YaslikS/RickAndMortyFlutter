@@ -33,9 +33,7 @@ class _EpisodeTileWidget extends State<EpisodeTileWidget> {
       builder: (context, state) {
         if (state is EpisodeTileLoaded) {
           final episode = state.episode;
-          // debugPrint(episode.name);
-          // debugPrint(episode.episode);
-          Padding(
+          return Padding(
               padding: const EdgeInsets.only(right: 20, left: 20, top: 15),
               child: Container(
                 padding: const EdgeInsets.all(15),
@@ -63,19 +61,13 @@ class _EpisodeTileWidget extends State<EpisodeTileWidget> {
               ));
         }
         if (state is EpisodeTileLoadingFailure) {
-          const Center(
+          return const Center(
             child: Text("Something went wrong"),
-          );
-        }
-        if (state is EpisodeTileLoading) {
-          const Center(
-            child: Text("Loading..."),
           );
         }
         return Padding(
             padding: const EdgeInsets.only(right: 20, left: 20, top: 15),
-            child: Center(
-                child: Container(
+            child: Container(
               padding: const EdgeInsets.all(15),
               decoration: BoxDecoration(
                 color: const Color.fromARGB(255, 38, 42, 55),
@@ -84,21 +76,26 @@ class _EpisodeTileWidget extends State<EpisodeTileWidget> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    "???",
-                    style: const TextStyle(fontSize: 18, color: Colors.white),
+                  Container(
+                    height: 20,
+                    width: 100,
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 5, 13, 30),
+                      borderRadius: BorderRadius.circular(5),
+                    ),
                   ),
                   const SizedBox(height: 5),
-                  Text(
-                    "???",
-                    style: const TextStyle(
-                      fontSize: 15,
-                      color: Colors.green,
+                  Container(
+                    height: 20,
+                    width: 150,
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 5, 13, 30),
+                      borderRadius: BorderRadius.circular(5),
                     ),
                   ),
                 ],
               ),
-            )));
+            ));
       },
     );
   }

@@ -32,6 +32,7 @@ class _CharactersListScreenPageState extends State<CharactersListScreen> {
     final theme = Theme.of(context);
     return Scaffold(
       appBar: AppBar(
+        leading: null,
         title: const Text("Characters"),
       ),
       body: RefreshIndicator(

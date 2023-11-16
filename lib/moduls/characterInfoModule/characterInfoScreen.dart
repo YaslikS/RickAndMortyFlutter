@@ -109,12 +109,17 @@ class _CharacterInfoScreenPageState extends State<CharacterInfoScreen> {
                                     TextStyle(fontSize: 18, color: Colors.grey),
                               ),
                               const Spacer(),
-                              Text(
-                                (character?.type != null &&
-                                        character!.type.isNotEmpty)
-                                    ? character!.type
-                                    : "None",
-                                style: const TextStyle(fontSize: 18),
+                              Container(
+                                alignment: Alignment.bottomRight,
+                                width: 210,
+                                child: Text((
+                                    character?.type != null &&
+                                        character!.type.isNotEmpty
+                                )
+                                      ? character!.type
+                                      : "None",
+                                  style: const TextStyle(fontSize: 18),
+                                ),
                               ),
                             ],
                           ),
@@ -163,16 +168,19 @@ class _CharacterInfoScreenPageState extends State<CharacterInfoScreen> {
                         children: [
                           Image.asset(
                             "lib/asset/RaM_planetIcon.png",
-                            height: 94,
+                            height: 72,
                           ),
                           Padding(
-                            padding: const EdgeInsets.only(left: 15),
+                            padding: const EdgeInsets.only(left: 15, right: 15),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text(
-                                  character?.origin.name ?? "null",
-                                  style: const TextStyle(fontSize: 18),
+                                SizedBox(
+                                  width: 210,
+                                  child: Text(
+                                    character?.origin.name ?? "null",
+                                    style: const TextStyle(fontSize: 18),
+                                  ),
                                 ),
                                 const SizedBox(height: 8),
                                 const Text(

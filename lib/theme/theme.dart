@@ -24,7 +24,6 @@ final darkTheme = ThemeData(
       headlineMedium: const TextStyle(
         color: Colors.white,
         fontSize: 25,
-        //fontWeight: FontWeight.w500
       )
   ),
 );

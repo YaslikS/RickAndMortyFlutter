@@ -16,7 +16,6 @@ class EpisodeTileBloc extends Bloc<EpisodeTileEvent, EpisodeTileState> {
         }
         final episode = await charactersRepo.getEpisode(event.url);
         emit(EpisodeTileLoaded(episode: episode));
-        debugPrint(episode.name);
       } catch (e, st) {
         emit(EpisodeTileLoadingFailure(exception: e));
       }
