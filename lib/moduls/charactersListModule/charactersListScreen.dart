@@ -35,7 +35,7 @@ class _CharactersListScreenPageState extends State<CharactersListScreen> {
         leading: null,
         title: Text(
           "Characters",
-          style: theme.textTheme.headlineMedium,
+          style: theme.textTheme.displaySmall,
         ),
       ),
       body: RefreshIndicator(

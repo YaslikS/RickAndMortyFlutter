@@ -23,11 +23,11 @@ class FailureLoadingCharacterList extends StatelessWidget {
       children: [
         Text(
           'Something went wrong',
-          style: theme.textTheme.headlineMedium,
+          style: theme.textTheme.displaySmall,
         ),
         Text(
           'Please try again later',
-          style: theme.textTheme.bodyMedium,
+          style: theme.textTheme.displaySmall,
         ),
         SizedBox(height: Spaces.thirtyTwo),
         TextButton(

@@ -15,18 +15,20 @@ final darkTheme = ThemeData(
       )),
   listTileTheme: ListTileThemeData(iconColor: RaM_Colors.white),
   textTheme: TextTheme(
-    bodyMedium: TextStyle(
-      color: RaM_Colors.white,
-      fontSize: 20,
-      fontWeight: FontWeight.w500,
-    ),
-    labelSmall: TextStyle(
-      color: RaM_Colors.white,
-      fontSize: 15,
-    ),
-    headlineMedium: TextStyle(
-      color: RaM_Colors.white,
-      fontSize: 30,
-    ),
-  ),
+      displaySmall: TextStyle(
+        color: RaM_Colors.white,
+        fontSize: 30,
+      ),
+      labelMedium: TextStyle(
+        color: RaM_Colors.white,
+        fontSize: 15,
+      ),
+      labelLarge: TextStyle(
+        color: RaM_Colors.white,
+        fontSize: 18,
+      ),
+      labelSmall: TextStyle(
+        color: RaM_Colors.green,
+        fontSize: 15,
+      )),
 );

@@ -21,7 +21,7 @@ class InfoOriginWidget extends StatelessWidget {
           padding: EdgeInsets.only(left: Paddings.twenty),
           child: Text(
             "Origin",
-            style: theme.textTheme.bodyMedium,
+            style: theme.textTheme.labelLarge,
           ),
         ),
         Padding(
@@ -52,16 +52,13 @@ class InfoOriginWidget extends StatelessWidget {
                         width: Sizes.twoHundred,
                         child: Text(
                           character?.origin.name ?? "null",
-                          style: theme.textTheme.labelSmall?.copyWith(fontSize: 18),
+                          style: theme.textTheme.labelLarge,
                         ),
                       ),
                       SizedBox(height: Spaces.eight),
                       Text(
                         "Planet",
-                        style: theme.textTheme.labelSmall?.copyWith(
-                          fontSize: 15,
-                          color: RaM_Colors.green,
-                        ),
+                        style: theme.textTheme.labelSmall,
                       ),
                     ],
                   ),

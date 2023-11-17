@@ -29,17 +29,14 @@ class InfoTopWidget extends StatelessWidget {
               top: Paddings.twentyFour, bottom: Paddings.sixteen),
           child: Text(
             character!.name,
-            style: theme.textTheme.bodyMedium,
+            style: theme.textTheme.labelLarge,
           ),
         ),
         Padding(
           padding: EdgeInsets.only(bottom: Paddings.ten),
           child: Text(
             character?.status ?? "None",
-            style: theme.textTheme.labelSmall?.copyWith(
-              fontSize: 15,
-              color: RaM_Colors.green,
-            ),
+            style: theme.textTheme.labelSmall,
           ),
         ),
       ],

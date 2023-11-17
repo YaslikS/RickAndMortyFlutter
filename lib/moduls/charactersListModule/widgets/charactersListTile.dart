@@ -48,7 +48,7 @@ class CharacterListTile extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: Paddings.six),
                 child: Text(
                   characterItem.name,
-                  style: theme.textTheme.labelSmall,
+                  style: theme.textTheme.labelMedium,
                 ),
               ),
             ],

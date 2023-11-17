@@ -43,17 +43,14 @@ class InfoInfoWidget extends StatelessWidget {
                   children: [
                     Text(
                       "Species",
-                      style: theme.textTheme.labelSmall?.copyWith(
-                        fontSize: 16,
+                      style: theme.textTheme.labelLarge?.copyWith(
                         color: RaM_Colors.grey,
                       ),
                     ),
                     const Spacer(),
                     Text(
                       character?.species ?? "None",
-                      style: theme.textTheme.labelSmall?.copyWith(
-                        fontSize: 16,
-                      ),
+                      style: theme.textTheme.labelLarge,
                     ),
                   ],
                 ),
@@ -62,8 +59,7 @@ class InfoInfoWidget extends StatelessWidget {
                   children: [
                     Text(
                       "Type",
-                      style: theme.textTheme.labelSmall?.copyWith(
-                        fontSize: 16,
+                      style: theme.textTheme.labelLarge?.copyWith(
                         color: RaM_Colors.grey,
                       ),
                     ),
@@ -75,9 +71,7 @@ class InfoInfoWidget extends StatelessWidget {
                         (character?.type != null && character!.type.isNotEmpty)
                             ? character!.type
                             : "None",
-                        style: theme.textTheme.labelSmall?.copyWith(
-                          fontSize: 16,
-                        ),
+                        style: theme.textTheme.labelLarge,
                       ),
                     ),
                   ],
@@ -87,17 +81,14 @@ class InfoInfoWidget extends StatelessWidget {
                   children: [
                     Text(
                       "Gender",
-                      style: theme.textTheme.labelSmall?.copyWith(
-                        fontSize: 16,
+                      style: theme.textTheme.labelLarge?.copyWith(
                         color: RaM_Colors.grey,
                       ),
                     ),
                     const Spacer(),
                     Text(
                       character?.gender ?? "None",
-                      style: theme.textTheme.labelSmall?.copyWith(
-                        fontSize: 16,
-                      ),
+                      style: theme.textTheme.labelLarge,
                     ),
                   ],
                 ),

@@ -30,15 +30,12 @@ class LoadedEpisode extends StatelessWidget {
             children: [
               Text(
                 episode.name,
-                style: theme.textTheme.labelSmall?.copyWith(fontSize: 18),
+                style: theme.textTheme.labelLarge,
               ),
               SizedBox(height: Spaces.eight),
               Text(
                 episode.episode,
-                style: theme.textTheme.labelSmall?.copyWith(
-                  fontSize: 15,
-                  color: RaM_Colors.green,
-                ),
+                style: theme.textTheme.labelSmall,
               ),
             ],
           ),
