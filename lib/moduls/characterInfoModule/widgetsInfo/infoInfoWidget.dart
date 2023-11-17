@@ -21,7 +21,7 @@ class InfoInfoWidget extends StatelessWidget {
           padding: EdgeInsets.only(left: Paddings.twenty),
           child: Text(
             "Info",
-            style: theme.textTheme.bodyMedium,
+            style: theme.textTheme.labelLarge,
           ),
         ),
         Padding(
