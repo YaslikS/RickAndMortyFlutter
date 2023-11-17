@@ -9,7 +9,7 @@ class Paddings {
   static double twentyFour = 24;
 }
 
-class Radiuses {
+class Rounding {
   static double five = 5;
   static double fifteen = 15;
   static double twenty = 20;
@@ -31,7 +31,7 @@ class Sizes {
   static double twenty = 20;
 }
 
-class RaM_Colors {
+class AppColors {
   static MaterialColor green = Colors.green;
   static Color white = Colors.white;
   static Color grey = Colors.grey;

@@ -30,14 +30,14 @@ class CharacterListTile extends StatelessWidget {
         child: Container(
           padding: EdgeInsets.all(Paddings.twelve),
           decoration: BoxDecoration(
-            color: RaM_Colors.backgroundSecondary,
-            borderRadius: BorderRadius.circular(Radiuses.twenty),
+            color: AppColors.backgroundSecondary,
+            borderRadius: BorderRadius.circular(Rounding.twenty),
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               ClipRRect(
-                borderRadius: BorderRadius.circular(Radiuses.fifteen),
+                borderRadius: BorderRadius.circular(Rounding.fifteen),
                 child: Image.network(
                   characterItem.image,
                   width: Sizes.oneHundredThirty,

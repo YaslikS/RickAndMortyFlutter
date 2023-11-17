@@ -17,7 +17,7 @@ class InfoTopWidget extends StatelessWidget {
     return Column(
       children: [
         ClipRRect(
-          borderRadius: BorderRadius.circular(Radiuses.twenty),
+          borderRadius: BorderRadius.circular(Rounding.twenty),
           child: Image.network(
             character!.image,
             width: Sizes.oneHundredEighty,

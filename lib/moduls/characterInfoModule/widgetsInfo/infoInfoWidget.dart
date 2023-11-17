@@ -33,8 +33,8 @@ class InfoInfoWidget extends StatelessWidget {
           child: Container(
             padding: EdgeInsets.all(Paddings.sixteen),
             decoration: BoxDecoration(
-              color: RaM_Colors.backgroundSecondary,
-              borderRadius: BorderRadius.circular(Radiuses.twenty),
+              color: AppColors.backgroundSecondary,
+              borderRadius: BorderRadius.circular(Rounding.twenty),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -44,7 +44,7 @@ class InfoInfoWidget extends StatelessWidget {
                     Text(
                       "Species",
                       style: theme.textTheme.labelLarge?.copyWith(
-                        color: RaM_Colors.grey,
+                        color: AppColors.grey,
                       ),
                     ),
                     const Spacer(),
@@ -60,7 +60,7 @@ class InfoInfoWidget extends StatelessWidget {
                     Text(
                       "Type",
                       style: theme.textTheme.labelLarge?.copyWith(
-                        color: RaM_Colors.grey,
+                        color: AppColors.grey,
                       ),
                     ),
                     const Spacer(),
@@ -82,7 +82,7 @@ class InfoInfoWidget extends StatelessWidget {
                     Text(
                       "Gender",
                       style: theme.textTheme.labelLarge?.copyWith(
-                        color: RaM_Colors.grey,
+                        color: AppColors.grey,
                       ),
                     ),
                     const Spacer(),

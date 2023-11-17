@@ -22,8 +22,8 @@ class LoadedEpisode extends StatelessWidget {
         child: Container(
           padding: EdgeInsets.all(Paddings.sixteen),
           decoration: BoxDecoration(
-            color: RaM_Colors.backgroundSecondary,
-            borderRadius: BorderRadius.circular(Radiuses.twenty),
+            color: AppColors.backgroundSecondary,
+            borderRadius: BorderRadius.circular(Rounding.twenty),
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,

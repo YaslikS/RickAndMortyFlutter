@@ -17,8 +17,8 @@ class InitialEpisode extends StatelessWidget {
         child: Container(
           padding: EdgeInsets.all(Paddings.sixteen),
           decoration: BoxDecoration(
-            color: RaM_Colors.backgroundSecondary,
-            borderRadius: BorderRadius.circular(Radiuses.twenty),
+            color: AppColors.backgroundSecondary,
+            borderRadius: BorderRadius.circular(Rounding.twenty),
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -27,8 +27,8 @@ class InitialEpisode extends StatelessWidget {
                 height: Sizes.twenty,
                 width: Sizes.oneHundred,
                 decoration: BoxDecoration(
-                  color: RaM_Colors.background,
-                  borderRadius: BorderRadius.circular(Radiuses.five),
+                  color: AppColors.background,
+                  borderRadius: BorderRadius.circular(Rounding.five),
                 ),
               ),
               SizedBox(height: Spaces.eight),
@@ -36,8 +36,8 @@ class InitialEpisode extends StatelessWidget {
                 height: Sizes.twenty,
                 width: Sizes.oneHundredFifty,
                 decoration: BoxDecoration(
-                  color: RaM_Colors.background,
-                  borderRadius: BorderRadius.circular(Radiuses.five),
+                  color: AppColors.background,
+                  borderRadius: BorderRadius.circular(Rounding.five),
                 ),
               ),
             ],
