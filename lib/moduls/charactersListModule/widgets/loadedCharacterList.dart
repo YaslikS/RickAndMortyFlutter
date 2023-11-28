@@ -22,7 +22,7 @@ class LoadedCharacterList extends StatelessWidget {
           right: Paddings.six),
       itemCount: state.characterList.length,
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-        childAspectRatio: 1 / 1.2,
+        childAspectRatio: 1 / 1.35,
         crossAxisCount: 2,
       ),
       itemBuilder: (context, i) {

@@ -9,6 +9,10 @@ void main() {
       CharacterListRepo(dio: Dio()));
 
   runApp(const RickAndMortyApp());
+  // runApp(DevicePreview(
+  //   enabled: true,
+  //   builder: (context) => RickAndMortyApp(), // Wrap your app
+  // ));
 }
 
 

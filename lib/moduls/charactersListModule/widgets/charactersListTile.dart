@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../theme/enums.dart';
 import '/repo/repoExport.dart';
+import '../../../theme/enums.dart';
 
 class CharacterListTile extends StatelessWidget {
   const CharacterListTile({
@@ -44,11 +44,18 @@ class CharacterListTile extends StatelessWidget {
                   height: Sizes.oneHundredThirty,
                 ),
               ),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: Paddings.six),
-                child: Text(
-                  characterItem.name,
-                  style: theme.textTheme.labelMedium,
+              Flexible(
+                fit: FlexFit.loose,
+                child: Padding(
+                  padding: EdgeInsets.only(
+                      right: Paddings.six,
+                      left: Paddings.six,
+                      top: Paddings.ten),
+                  child: Text(
+                    characterItem.name,
+                    overflow: TextOverflow.visible,
+                    style: theme.textTheme.labelMedium,
+                  ),
                 ),
               ),
             ],

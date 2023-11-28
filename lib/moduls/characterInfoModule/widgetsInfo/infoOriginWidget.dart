@@ -49,7 +49,7 @@ class InfoOriginWidget extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       SizedBox(
-                        width: Sizes.twoHundred,
+                        width: Sizes.oneHundredEighty,
                         child: Text(
                           character?.origin.name ?? "null",
                           style: theme.textTheme.labelLarge,
