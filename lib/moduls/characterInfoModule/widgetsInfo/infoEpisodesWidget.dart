@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rick_and_morty/asset/translations/translationsExport.dart';
 
 import '../../../repo/repoExport.dart';
 import '../../../theme/enums.dart';
@@ -22,7 +23,7 @@ class InfoEpisodesWidget extends StatelessWidget {
             Padding(
               padding: EdgeInsets.only(left: Paddings.twenty),
               child: Text(
-                "Episodes",
+                LocaleKeys.episodes.tr(),
                 style: theme.textTheme.labelLarge,
               ),
             ),

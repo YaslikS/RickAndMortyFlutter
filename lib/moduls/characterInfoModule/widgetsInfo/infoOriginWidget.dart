@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rick_and_morty/asset/translations/translationsExport.dart';
 
 import '../../../repo/repoExport.dart';
 import '../../../theme/enums.dart';
@@ -20,7 +21,7 @@ class InfoOriginWidget extends StatelessWidget {
         Padding(
           padding: EdgeInsets.only(left: Paddings.twenty),
           child: Text(
-            "Origin",
+            LocaleKeys.origin.tr(),
             style: theme.textTheme.labelLarge,
           ),
         ),

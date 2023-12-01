@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rick_and_morty/asset/translations/translationsExport.dart';
 
 import '../../../repo/repoExport.dart';
 import '../../../theme/enums.dart';
@@ -20,7 +21,7 @@ class InfoInfoWidget extends StatelessWidget {
         Padding(
           padding: EdgeInsets.only(left: Paddings.twenty),
           child: Text(
-            "Info",
+            LocaleKeys.info.tr(),
             style: theme.textTheme.labelLarge,
           ),
         ),
@@ -42,7 +43,7 @@ class InfoInfoWidget extends StatelessWidget {
                 Row(
                   children: [
                     Text(
-                      "Species",
+                      LocaleKeys.species.tr(),
                       style: theme.textTheme.labelLarge?.copyWith(
                         color: AppColors.grey,
                       ),
@@ -58,7 +59,7 @@ class InfoInfoWidget extends StatelessWidget {
                 Row(
                   children: [
                     Text(
-                      "Type",
+                      LocaleKeys.type.tr(),
                       style: theme.textTheme.labelLarge?.copyWith(
                         color: AppColors.grey,
                       ),
@@ -80,7 +81,7 @@ class InfoInfoWidget extends StatelessWidget {
                 Row(
                   children: [
                     Text(
-                      "Gender",
+                      LocaleKeys.gender.tr(),
                       style: theme.textTheme.labelLarge?.copyWith(
                         color: AppColors.grey,
                       ),

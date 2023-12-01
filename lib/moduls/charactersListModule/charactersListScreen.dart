@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_it/get_it.dart';
+import 'package:rick_and_morty/asset/translations/translationsExport.dart';
 
 import '../../repo/repoExport.dart';
 import 'bloc/characterListBloc.dart';
@@ -34,7 +35,7 @@ class _CharactersListScreenPageState extends State<CharactersListScreen> {
       appBar: AppBar(
         leading: null,
         title: Text(
-          "Characters",
+          LocaleKeys.characters.tr(),
           style: theme.textTheme.displaySmall,
         ),
       ),
