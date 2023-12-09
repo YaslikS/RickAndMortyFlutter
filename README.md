@@ -1,6 +1,6 @@
 # RickAndMortyFlutter
 
-Использовано: AndroidStudio, Flutter; Dart, External API, Bloc, Dio, GetIt.
+Использовано: AndroidStudio, Flutter; Dart, External API, Bloc, Dio, GetIt, easy_localization.
 
 Тестовое задание:
 
