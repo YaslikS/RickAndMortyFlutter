@@ -33,9 +33,9 @@ class InfoEpisodesWidget extends StatelessWidget {
           shrinkWrap: true,
           physics: const NeverScrollableScrollPhysics(),
           itemBuilder: (context, i) {
-            return EpisodeTileWidget(url: character!.episodes[i]);
+            return EpisodeTileWidget(url: character!.episode[i]);
           },
-          itemCount: character!.episodes.length,
+          itemCount: character!.episode.length,
         ),
       ],
     );

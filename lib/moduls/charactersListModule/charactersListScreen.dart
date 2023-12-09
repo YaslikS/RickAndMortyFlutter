@@ -52,6 +52,7 @@ class _CharactersListScreenPageState extends State<CharactersListScreen> {
               return LoadedCharacterList(state: state);
             }
             if (state is CharacterListLoadingFailure) {
+              print(state.exception);
               return FailureLoadingCharacterList();
             }
             return const Center(child: CircularProgressIndicator());

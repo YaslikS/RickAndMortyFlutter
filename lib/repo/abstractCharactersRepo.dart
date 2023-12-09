@@ -1,4 +1,4 @@
-import 'charactersListRepo/characterModel/tileCharactersModel.dart';
+import 'charactersListRepo/characterModel/characterModel/characterModel.dart';
 import 'charactersListRepo/episodeModel/episodeTileModel.dart';
 
 abstract class AbstractCharactersRepo {

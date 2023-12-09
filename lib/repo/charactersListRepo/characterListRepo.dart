@@ -11,43 +11,26 @@ class CharacterListRepo implements AbstractCharactersRepo {
   Future<EpisodeTile> getEpisode(String url) async {
     final response = await dio.get(url);
 
-    final data = response.data as Map<String, dynamic>;
-    final strName = data['name'] as String;
-    final strEpisode = data['episode'] as String;
-    // debugPrint(strEpisode);
-    // debugPrint(strName);
-    return EpisodeTile(name: strName, episode: strEpisode);
+    Map<String, dynamic> episodeMap = response.data;
+    EpisodeTile newEpisode = EpisodeTile.fromJson(episodeMap);
+
+    return EpisodeTile(name: newEpisode.name, episode: newEpisode.episode);
   }
 
   @override
   Future<List<Character>> getCharacterList() async {
     final response = await dio.get('https://rickandmortyapi.com/api/character');
 
-    final data = response.data as Map<String, dynamic>;
-    final dataResults = data['results'] as List<dynamic>;
-
-    final list = dataResults.map((e) {
-      final originMap = e["origin"] as Map<String, dynamic>;
-      final origin = Origin(name: originMap["name"], url: originMap["url"]);
-
-      final dataEpisodes = e['episode'] as List<dynamic>;
-      final listEpisodes = dataEpisodes.map((e) {
-        //debugPrint(e);
-        return e.toString();
-      }).toList();
-
-      return Character(
-        id: e['id'],
-        name: e["name"],
-        image: e["image"],
-        status: e["status"],
-        species: e["species"],
-        type: e["type"],
-        gender: e["gender"],
-        origin: origin,
-        episodes: listEpisodes,
-      );
-    }).toList();
+    Map<String, dynamic> rootMap = response.data;
+    late Map<String, dynamic> resultsMap;
+    for (final element in rootMap.entries) {
+      if (element.key == "results") {
+        print(element.key);
+        resultsMap = {element.key: element.value};
+      }
+    }
+    Results results = Results.fromJson(resultsMap);
+    final List<Character> list = results.results;
 
     return list;
   }

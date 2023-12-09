@@ -1,9 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:rick_and_morty/repo/abstractCharactersRepo.dart';
 
-import '../../../repo/charactersListRepo/characterModel/tileCharactersModel.dart';
+import '../../../repo/repoExport.dart';
 
 part 'characterListEvent.dart';
 part 'characterListState.dart';
