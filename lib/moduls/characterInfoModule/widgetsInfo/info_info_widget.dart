@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rick_and_morty/asset/translations/translationsExport.dart';
 
-import '../../../repo/repoExport.dart';
+import '../../../repo/export_repo.dart';
 import '../../../theme/enums.dart';
 
 class InfoInfoWidget extends StatelessWidget {

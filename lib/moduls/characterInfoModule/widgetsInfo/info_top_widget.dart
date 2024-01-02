@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../repo/repoExport.dart';
+import '../../../repo/export_repo.dart';
 import '../../../theme/enums.dart';
 
 class InfoTopWidget extends StatelessWidget {

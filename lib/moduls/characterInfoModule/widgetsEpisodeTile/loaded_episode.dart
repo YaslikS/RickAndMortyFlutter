@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rick_and_morty/repo/repoExport.dart';
+import 'package:rick_and_morty/repo/export_repo.dart';
 
 import '../../../theme/enums.dart';
 

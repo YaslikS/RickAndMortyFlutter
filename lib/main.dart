@@ -2,9 +2,9 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:rick_and_morty/asset/translations/translationsExport.dart';
-import 'package:rick_and_morty/repo/repoExport.dart';
+import 'package:rick_and_morty/repo/export_repo.dart';
 
-import 'rickAndMortyApp.dart';
+import 'rick_and_morty_app.dart';
 
 void main() async {
   GetIt.I.registerLazySingleton<AbstractCharactersRepo>(

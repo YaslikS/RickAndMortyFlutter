@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:rick_and_morty/theme/enums.dart';
 
-import '../bloc/characterListBloc.dart';
-import 'characterListWidgetsExport.dart';
+import '../bloc/character_list_bloc.dart';
+import 'export_character_list_widgets.dart';
 
 class LoadedCharacterList extends StatelessWidget {
   const LoadedCharacterList({

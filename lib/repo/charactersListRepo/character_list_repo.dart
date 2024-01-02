@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 
-import '../repoExport.dart';
+import '../export_repo.dart';
 
 class CharacterListRepo implements AbstractCharactersRepo {
   final Dio dio;
@@ -25,7 +25,6 @@ class CharacterListRepo implements AbstractCharactersRepo {
     late Map<String, dynamic> resultsMap;
     for (final element in rootMap.entries) {
       if (element.key == "results") {
-        print(element.key);
         resultsMap = {element.key: element.value};
       }
     }

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 
-import '../../../repo/repoExport.dart';
+import '../../../repo/export_repo.dart';
 import '../../../theme/enums.dart';
-import '../bloc/characterListBloc.dart';
+import '../bloc/character_list_bloc.dart';
 
 class FailureLoadingCharacterList extends StatelessWidget {
   FailureLoadingCharacterList({

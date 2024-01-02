@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:rick_and_morty/router/export_router.dart';
 
-import '/repo/repoExport.dart';
 import '../../../theme/enums.dart';
+import '/repo/export_repo.dart';
 
 class CharacterListTile extends StatelessWidget {
   const CharacterListTile({
@@ -20,10 +21,12 @@ class CharacterListTile extends StatelessWidget {
         child: InkResponse(
       enableFeedback: true,
       onTap: () {
-        Navigator.of(context).pushNamed(
-          '/info',
-          arguments: characterItem,
-        );
+        AutoRouter.of(context)
+            .push(CharacterInfoRoute(character: characterItem));
+        // Navigator.of(context).pushNamed(
+        //   '/info',
+        //   arguments: characterItem,
+        // );
       },
       child: Padding(
         padding: EdgeInsets.all(Paddings.twelve),

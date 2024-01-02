@@ -4,11 +4,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_it/get_it.dart';
 import 'package:rick_and_morty/asset/translations/translationsExport.dart';
+import 'package:rick_and_morty/router/export_router.dart';
 
-import '../../repo/repoExport.dart';
-import 'bloc/characterListBloc.dart';
-import 'widgets/characterListWidgetsExport.dart';
+import '../../repo/export_repo.dart';
+import 'bloc/character_list_bloc.dart';
+import 'widgets/export_character_list_widgets.dart';
 
+@RoutePage()
 class CharactersListScreen extends StatefulWidget {
   const CharactersListScreen({
     super.key,
@@ -33,7 +35,6 @@ class _CharactersListScreenPageState extends State<CharactersListScreen> {
     final theme = Theme.of(context);
     return Scaffold(
       appBar: AppBar(
-        leading: null,
         title: Text(
           LocaleKeys.characters.tr(),
           style: theme.textTheme.displaySmall,

@@ -1,4 +1,4 @@
-part of 'episodeTileBloc.dart';
+part of 'episode_tile_bloc.dart';
 
 abstract class EpisodeTileEvent {}
 

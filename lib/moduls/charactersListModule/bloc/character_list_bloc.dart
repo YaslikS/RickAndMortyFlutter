@@ -2,10 +2,10 @@ import 'dart:async';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../repo/repoExport.dart';
+import '../../../repo/export_repo.dart';
 
-part 'characterListEvent.dart';
-part 'characterListState.dart';
+part 'character_list_event.dart';
+part 'character_list_state.dart';
 
 class CharacterListBloc extends Bloc<CharacterListEvent, CharacterListState> {
   CharacterListBloc(this.charactersRepo) : super(CharacterListInitial()) {

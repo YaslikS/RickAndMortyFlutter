@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_it/get_it.dart';
 
-import '../../../repo/repoExport.dart';
-import '../epidodeTileBloc/episodeTileBloc.dart';
-import 'episodeTileWidgetsExport.dart';
+import '../../../repo/export_repo.dart';
+import '../epidodeTileBloc/episode_tile_bloc.dart';
+import 'export_episode_tile_widgets.dart';
 
 class EpisodeTileWidget extends StatefulWidget {
   const EpisodeTileWidget({
@@ -36,6 +36,7 @@ class _EpisodeTileWidget extends State<EpisodeTileWidget> {
           final episode = state.episode;
           return LoadedEpisode(episode: episode);
         }
+
         if (state is EpisodeTileLoadingFailure) {
           return Container();
         }

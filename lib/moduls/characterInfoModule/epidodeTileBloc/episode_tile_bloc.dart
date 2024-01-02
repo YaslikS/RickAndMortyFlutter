@@ -1,10 +1,10 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../repo/repoExport.dart';
+import '../../../repo/export_repo.dart';
 
-part 'episodeTileEvent.dart';
+part 'episode_tile_event.dart';
 
-part 'episodeTileState.dart';
+part 'episode_tile_state.dart';
 
 class EpisodeTileBloc extends Bloc<EpisodeTileEvent, EpisodeTileState> {
   EpisodeTileBloc(this.charactersRepo) : super(EpisodeTileInitial()) {
